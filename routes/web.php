@@ -24,7 +24,7 @@ Route::get('/pizzas', function () {
 
     $pizza = [
         'type' => 'Chicken Donar Pizza', 
-        'base' => 'With Salad',
+        'base' => 'Garlic',
         'price' => 10
     ];
     return view('pizzas', $pizza);

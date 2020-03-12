@@ -73,6 +73,22 @@
                 <ul>
                     <li>{{ $type }} - {{ $base }} - {{ $price}}</li>
                 </ul>
+                @if($price >15)
+                    <p>This pizza is expensive!!</p>
+                @elseif($price < 5)
+                    <p>This pizza is cheap!!</p>
+                @else
+                    <p>This pizza is normally priced!!</p>
+                @endif
+                <!-- unless is opposite of if -->
+                @unless($base == 'Cheesy Crust') 
+                    <p>You don't have a cheesy crust!!</p>
+                @endunless
+
+                @php
+                    $name = 'Tajul';
+                    echo($name);
+                @endphp
             </div>
         </div>
     </body>
