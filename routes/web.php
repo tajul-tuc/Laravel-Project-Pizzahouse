@@ -22,11 +22,17 @@ Route::get('/pizzas', function () {
     //get data from db
     // return view('pizzas', ['type' => 'Chicken Donar Pizza', 'base' => 'With Salad']);
 
-    $pizza = [
-        'type' => 'Chicken Donar Pizza', 
-        'base' => 'Garlic',
-        'price' => 10
+    // $pizza = [
+    //     'type' => 'Chicken Donar Pizza', 
+    //     'base' => 'Garlic',
+    //     'price' => 10
+    // ];
+    // return view('pizzas', $pizza);
+    $pizzas = [
+        ['type' => 'Chicken Donar Pizza',  'base' => 'Chessy crust', 'price' => 10],
+        ['type' => 'Garlic Chee',  'base' => 'Garlic crust', 'price' => 10],
+        ['type' => 'Veg',  'base' => 'Vegetables crust', 'price' => 10]
     ];
-    return view('pizzas', $pizza);
+    return view('pizzas', ['pizzas'=> $pizzas]);
 });
 
