@@ -18,8 +18,9 @@
             @endif
 
             <div class="content">
+            <img src="/img/pizza-house.png" alt="pizza-house-logo">
                 <div class="title m-b-md">
-                    Laravel
+                    The North's Best Pizzas
                 </div>
 
                 <div class="links">
